@@ -12,7 +12,14 @@ var studyScore = id("tvStudyScore").findOne().text();
 if (parseInt(studyScore) > 8) {
 
     console.log("学时已达标");     // break;
+console.log("学习完成 ");
+    // 循环结束后关闭控制台
 
+    console.hide();
+
+    // 退出脚本
+
+    exit();
         
 } else {
     console.log("学时未达标");
